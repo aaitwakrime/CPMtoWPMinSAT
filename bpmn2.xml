@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process>
+  <startEvent id="_5987702704110043353" />
+  <sequenceFlow id="_2030604851514106505" sourceRef="_5987702704110043353" targetRef="s00000746_34" />
+  <sequenceFlow id="_8066397244097701120" sourceRef="s00000746_34" targetRef="s00000707_4" />
+  <inclusiveGateway configurable="Yes" gatewayDirection="Diverging" id="s00000707_4" name="s1" Ref="1" />
+  <sequenceFlow id="_3702198911700433679" sourceRef="s00000707_4" targetRef="s00000719_9" />
+  <sequenceFlow id="_3702198911700433680" sourceRef="s00000707_4" targetRef="s00000707_5" />
+  <sequenceFlow id="_3702198911700433681" sourceRef="s00000707_6" targetRef="s00000707_5" />
+  <exclusiveGateway gatewayDirection="Diverging" id="s00000719_9" name="s2" Ref="2" />
+  <exclusiveGateway gatewayDirection="Converging" id="s00000717_4" name="j1" Ref="3" />
+  <inclusiveGateway configurable="Yes" gatewayDirection="Converging" id="s00000707_5" name="j2" Ref="4" />
+  <inclusiveGateway configurable="Yes" gatewayDirection="Diverging" id="s00000707_6" name="s3" Ref="5" />
+  <inclusiveGateway configurable="Yes" gatewayDirection="Converging" id="s00000707_7" name="j3" Ref="6" />
+  <sequenceFlow id="_8832942189831625822" sourceRef="s00000707_5" targetRef="s00000745_34" />
+  <task id="s00000746_34" name="a1" Ref="7" />
+  <task id="s00000745_31" name="a2" Ref="8" />
+  <task id="s00000745_32" name="a3" Ref="9" />
+  <task configurable="Yes" id="s00000745_33" name="a4" Ref="10" />
+  <task id="s00000745_34" name="a5" Ref="11" />
+  <task id="s00000745_35" name="a6" Ref="12" />
+  <task id="s00000745_36" name="a7" Ref="13" />
+  <sequenceFlow id="_998007776328820450" sourceRef="s00000719_9" targetRef="s00000745_31" />
+  <sequenceFlow id="_8552982828946211307" sourceRef="s00000719_9" targetRef="s00000745_32" />
+  <sequenceFlow id="_998007776328820450" sourceRef="s00000745_31" targetRef="s00000717_4" />
+  <sequenceFlow id="_8552982828946211307" sourceRef="s00000745_32" targetRef="s00000717_4" />
+  <sequenceFlow id="_8569299830327448197" sourceRef="s00000717_4" targetRef="s00000707_6" />
+  <sequenceFlow id="_8569299830327448197" sourceRef="s00000707_6" targetRef="s00000745_33" />
+  <sequenceFlow id="_2749461534544057255" sourceRef="s00000745_34" targetRef="s00000745_35" />
+  <sequenceFlow id="_1768853211169167963" sourceRef="s00000745_33" targetRef="s00000707_7" />
+  <sequenceFlow id="_3807287376721088984" sourceRef="s00000745_35" targetRef="s00000707_7" />
+  <storage id="sid-86310AA5-DFA5-4757-B59F-1EBA27BD2D7B" name="Storage1" size="" />
+  <network id="sid-86310AA5-DFA5-4757-B59F-1EBA27BD2D7C" name="Network1" size="" />
+  <network id="sid-86310AA5-DFA5-4757-B59F-1EBA27BD2D7D" name="Network2" size="" />
+  <rangeGateway configurable="Yes" id="s00000708_1" name="c1" Ref="14" />
+  <sequenceFlow id="_1839788597774740915" sourceRef="s00000745_33" targetRef="s00000708_1" />
+  <sequenceFlow id="_1839788597774740915" sourceRef="s00000708_1" targetRef="sid-86310AA5-DFA5-4757-B59F-1EBA27BD2D7B" />
+  <sequenceFlow id="_1839788597774740915" sourceRef="s00000708_1" targetRef="sid-86310AA5-DFA5-4757-B59F-1EBA27BD2D7C" />
+  <sequenceFlow id="_1839788597774740915" sourceRef="s00000708_1" targetRef="sid-86310AA5-DFA5-4757-B59F-1EBA27BD2D7D" />
+  <sequenceFlow id="_1839788597774740915" sourceRef="s00000707_7" targetRef="s00000745_36" />
+  <endEvent id="_3786174140167529758" />
+  <sequenceFlow id="_7124548472911010344" sourceRef="s00000745_36" targetRef="_3786174140167529758" />
+</process>
+
